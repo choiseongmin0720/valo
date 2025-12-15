@@ -1,454 +1,504 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header{
-    background-color: black;
-    height: 80px;
-}
-
-header .heder-left{
-    visibility: hidden;
-    height: 0;
     margin: 0;
     padding: 0;
-}
-
-.riot{
-    width: 100px;
-    height: 80;
-    margin: 20px;
-    margin-left: 30px;
-    cursor: pointer;
-}
-
-.valo{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.dropdown{
-    background-color: black;
+    box-sizing: border-box;
+  }
+  
+  header{
+      background-color: black;
+      height: 80px;
+  }
+  
+  header .heder-left{
+      visibility: hidden;
+      height: 0;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .riot{
+      width: 100px;
+      height: 80;
+      margin: 20px;
+      margin-left: 30px;
+      cursor: pointer;
+  }
+  
+  .valo{
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      cursor: pointer;
+  }
+  
+  .dropdown{
+      background-color: black;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+      padding: 10px;
+      position: relative;
+      bottom: 30px;
+      margin-left: 100px;
+      cursor: pointer;
+  }
+  
+  .dropdown:hover{
+      color: rgb(194, 79, 79);
+      background-color: lightslategray;
+  }
+  
+  .search{
+      padding: 10px;
+      background-color: gray;
+      position: relative;
+      bottom: 25px;
+      margin-left: 50px;
+      cursor: pointer;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+  
+  }
+  
+  .global{
+      padding: 15px;
+      background-color: black;
+      position: relative;
+      bottom: 25px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+  }
+  
+  main h1 {
+    margin-bottom: 20px; /* 이 값을 줄이면 간격이 좁아짐 */
+  }
+  
+  main h2 {
+    margin-top: 0;
+  }
+  
+  .play{
+      width: 150px;
+      height: 35px;
+      background-color: rgb(194, 79, 79);
+      color: black;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      text-align: center;
+      position: relative;
+      bottom: 30px;
+      cursor: pointer;
+  }
+  
+  .overlay{
+      margin-bottom: 0;
+      height: 600px;
+      background-color: gray;
+      background-image: url(https://img3.yna.co.kr/etc/inner/KR/2020/03/01/AKR20200301071400017_04_i_P4.jpg);
+  }
+  
+  .title{
+      color: white;
+      font-size: 70px;
+      text-align: center;
+      margin-bottom: 30px;
+      height: 100px;
+      line-height: 270px;
+  }
+  
+  .overlay h2{
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      line-height: 250px;
+  }
+  
+  .free{
+      width: 180px;
+      height: 70px;
+      background-color: rgb(238, 88, 88);
+      border: 2px solid gray;
+      outline: 1px solid white;
+      font-size: 16px;
+      color: white;
+      margin-left: 840px;
+      cursor: pointer;
+  }
+  
+  .free:hover{
+      background-color: white;
+      color: black;
+  }
+  
+  .news{
+      height: 600px;
+      border-bottom: 3px solid gray;
+      background-color: rgb(227, 218, 207);
+  }
+  
+  .news h1{
+      font-size: 50px;
+      height: 50px;
+      line-height: 150px;
+      margin-left: 80px;
+  }
+  
+  .news a{
+      display: inline-block;
+      margin-left: 1230px;
+      text-decoration: none;
+      color: black;
+  }
+  
+  .news-boxs {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      padding: 0 40px;
+  }
+  
+  .new-box {
+      display: flex;
+      top: 300px;
+      background-color: #f0f0f0;
+      width: 400px;
+      height: 210px; 
+      margin-left: 50px;
+      cursor: pointer;
+      margin-top: 40px;
+      border: 3px solid black;
+  }
+  
+  .new-cha {
+      height: 630px;
+  }
+  
+  .update1{
+      display: inline-block;
+      margin-left: 110px;
+      height: 30px;
+  }
+  
+  .update2{
+      display: inline-block;
+      margin-left: 255px;
+      height: 30px;
+  }
+  
+  .update3{
+      display: inline-block;
+      margin-left: 305px;
+      height: 30px;
+  }
+  
+  .bito {
+    position: absolute;
+    top: 1580px; /* 위치 조정 */
+    left: 800px; /* 위치 조정 */
     color: white;
-    text-align: center;
-    display: inline-block;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    padding: 10px;
-    position: relative;
-    bottom: 30px;
-    margin-left: 40px;
-    cursor: pointer;
-}
-
-.dropdown:hover{
-    color: rgb(194, 79, 79);
-    background-color: lightslategray;
-}
-
-.search{
-    padding: 10px;
-    background-color: gray;
-    position: relative;
-    bottom: 25px;
-    margin-left: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-
-}
-
-.global{
-    padding: 15px;
-    background-color: black;
-    position: relative;
-    bottom: 25px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-main h1 {
-  margin-bottom: 20px; /* 이 값을 줄이면 간격이 좁아짐 */
-}
-
-main h2 {
-  margin-top: 0;
-}
-
-.play{
-    width: 150px;
-    height: 35px;
-    background-color: rgb(194, 79, 79);
-    color: black;
-    border-radius: 15px;
-    border: none;
-    outline: none;
-    text-align: center;
-    position: relative;
-    bottom: 30px;
-    cursor: pointer;
-}
-
-.overlay{
-    margin-bottom: 0;
-    height: 600px;
-    background-color: gray;
-    background-image: url(https://img3.yna.co.kr/etc/inner/KR/2020/03/01/AKR20200301071400017_04_i_P4.jpg);
-}
-
-.title{
-    color: white;
-    font-size: 70px;
-    text-align: center;
-    margin-bottom: 30px;
-    height: 100px;
-    line-height: 270px;
-}
-
-.overlay h2{
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    line-height: 250px;
-}
-
-.free{
-    width: 180px;
-    height: 70px;
-    background-color: rgb(238, 88, 88);
-    border: 2px solid gray;
-    outline: 1px solid white;
-    font-size: 16px;
-    color: white;
-    margin-left: 600px;
-    cursor: pointer;
-}
-
-.free:hover{
-    background-color: white;
-    color: black;
-}
-
-.news{
-    height: 600px;
-    border-bottom: 3px solid gray;
-    background-color: rgb(227, 218, 207);
-}
-
-.news h1{
-    font-size: 50px;
-    height: 50px;
-    line-height: 150px;
-    margin-left: 80px;
-}
-
-.news a{
-    display: inline-block;
-    margin-left: 1230px;
-    text-decoration: none;
-    color: black;
-}
-
-.news-boxs {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-    padding: 0 40px;
-}
-
-.new-box {
-    display: flex;
-    top: 300px;
-    background-color: #f0f0f0;
-    width: 400px;
-    height: 210px; 
-    margin-left: 50px;
-    cursor: pointer;
-    margin-top: 40px;
-    border: 3px solid black;
-}
-
-.new-cha {
+    font-size: 80px;
+    margin: 0;
+  }
+  
+  section img {
+    width: 100%;
     height: 630px;
-}
-
-.update1{
-    display: inline-block;
-    margin-left: 90px;
-    height: 30px;
-}
-
-.update2{
-    display: inline-block;
-    margin-left: 255px;
-    height: 30px;
-}
-
-.update3{
-    display: inline-block;
-    margin-left: 305px;
-    height: 30px;
-}
-
-.bito {
-  position: absolute;
-  top: 1580px; /* 위치 조정 */
-  left: 800px; /* 위치 조정 */
-  color: white;
-  font-size: 80px;
-  margin: 0;
-}
-
-section img {
-  width: 100%;
-  height: 630px;
-  object-fit: cover;
-  display: inline-block;
-}
-
-.zito {
-  position: absolute;
-  top: 1700px; /* 위치 조정 */
-  left: 810px; /* 위치 조정 */
-  color: white;
-  font-size: 20px;
-}
-
-.watch {
-  width: 180px;
-  height: 50px;
-  background-color: rgb(218, 85, 85);
-  border: none;
-  position: absolute;
-  top: 1770px; /* 위치 조정 */
-  left: 810px; /* 위치 조정 */
-  color: white;
-  font-size: 15px;
-  margin: 0;
-  cursor: pointer;
-}
-
-.watch:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-.we {
-    height: 600px;
-    background-color: rgb(238, 231, 221);
-    width: 100%;
     object-fit: cover;
     display: inline-block;
-    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c8157d71a4776dd821d05ed6b82d5d875ca03386-5120x1644.png?accountingTag=valorant_website?auto=format&amp;fit=fill&amp;q=80&amp;h=1280);
-}
-
-video {
-    width: 503px;
-    height: 282px;
-    
+  }
+  
+  .zito {
     position: absolute;
-    top: 1950px;
-    left: 700px;
-}
-
-.are {
-  position: absolute;
-  top: 1950px; /* 위치 조정 */
-  left: 50px; /* 위치 조정 */
-  color: black;
-  font-size: 80px;
-  margin: 0;
-}
-
-.start {
-  position: absolute;
-  top: 2200px; /* 위치 조정 */
-  left: 55px; /* 위치 조정 */
-  color: black;
-  font-size: 20px;
-  margin: 0;
-  font: bold;
-}
-
-.jonna {
-  position: absolute;
-  top: 2250px; /* 위치 조정 */
-  left: 55px; /* 위치 조정 */
-  color: black;
-  font-size: 20px;
-  margin: 0;
-}
-
-.watch1 {
-  width: 180px;
-  height: 50px;
-  background-color: rgb(218, 85, 85);
-  border: none;
-  position: absolute;
-  top: 2350px; /* 위치 조정 */
-  left: 55px; /* 위치 조정 */
-  color: white;
-  font-size: 15px;
-  margin: 0;
-}
-
-.watch1:hover {
-    background-color: black;
+    top: 1700px; /* 위치 조정 */
+    left: 810px; /* 위치 조정 */
     color: white;
-}
-
-.class {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/b9f3efa9355803cc44e4c59d3f4437cab192bec3-5120x1616.png?accountingTag=valorant_website?auto=format&amp;fit=fill&amp;q=80&amp;h=1457);
-}
-
-.class img {
+    font-size: 20px;
+  }
+  
+  .watch {
+    width: 180px;
+    height: 50px;
+    background-color: rgb(218, 85, 85);
+    border: none;
     position: absolute;
-    width: 503px;
-    height: 503px;
-    top: 2550px; /* 위치 조정 */
-    left: 150px; /* 위치 조정 */
-}
-
-.Valolant {
-  position: absolute;
-  top: 2650px; /* 위치 조정 */
-  left: 680px; /* 위치 조정 */
-  color: white;
-  font-size: 80px;
-  margin: 0;
-}
-
-.happy {
-  position: absolute;
-  top: 2850px; /* 위치 조정 */
-  left: 680px; /* 위치 조정 */
-  color: white;
-  font-size: 20px;
-  margin: 0;
-}
-
-
-.sad {
-  position: absolute;
-  top: 2950px; /* 위치 조정 */
-  left: 680px; /* 위치 조정 */
-  color: white;
-  font-size: 20px;
-  margin: 0;
-}
-
-.watch2 {
-  width: 180px;
-  height: 50px;
-  background-color: rgb(0, 0, 0);
-  border: none;
-  position: absolute;
-  top: 3050px; /* 위치 조정 */
-  left: 680px; /* 위치 조정 */
-  color: white;
-  font-size: 15px;
-  margin: 0;
-}
-
-.watch2:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-.class1 {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3828b05489971b4715f673bc0e2db81f6c7afac7-5120x1616.png?accountingTag=valorant_website?auto=format&amp;fit=fill&amp;q=80&amp;h=1457);
-}
-
-.class1 img {
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    top: 3150px; /* 위치 조정 */
-    left: 600px; /* 위치 조정 */
-}
-
-.Valolant1 {
-  position: absolute;
-  top: 3250px; /* 위치 조정 */
-  left: 80px; /* 위치 조정 */
-  color: black;
-  font-size: 80px;
-  margin: 0;
-}
-
-.happy1 {
-  position: absolute;
-  top: 3400px; /* 위치 조정 */
-  left: 80px; /* 위치 조정 */
-  color: black;
-  font-size: 20px;
-  margin: 0;
-}
-
-
-.sad1 {
-  position: absolute;
-  top: 3600px; /* 위치 조정 */
-  left: 80px; /* 위치 조정 */
-  color: black;
-  font-size: 20px;
-  margin: 0;
-}
-
-.watch3 {
-  width: 180px;
-  height: 50px;
-  background-color: rgb(218, 85, 85);
-  border: none;
-  position: absolute;
-  top: 3650px; /* 위치 조정 */
-  left: 80px; /* 위치 조정 */
-  color: white;
-  font-size: 15px;
-  margin: 0;
-}
-
-.watch3:hover {
-    background-color: black;
+    top: 1770px; /* 위치 조정 */
+    left: 810px; /* 위치 조정 */
     color: white;
+    font-size: 15px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .watch:hover {
+      background-color: lightgray;
+      color: black;
+  }
+  
+  .we {
+      height: 600px;
+      background-color: rgb(238, 231, 221);
+      width: 100%;
+      object-fit: cover;
+      display: inline-block;
+      background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/c8157d71a4776dd821d05ed6b82d5d875ca03386-5120x1644.png?accountingTag=valorant_website?auto=format&amp;fit=fill&amp;q=80&amp;h=1280);
+  }
+  
+  video {
+      width: 503px;
+      height: 282px;
+      
+      position: absolute;
+      top: 1950px;
+      left: 700px;
+  }
+  
+  .are {
+    position: absolute;
+    top: 1950px; /* 위치 조정 */
+    left: 50px; /* 위치 조정 */
+    color: black;
+    font-size: 80px;
+    margin: 0;
+  }
+  
+  .start {
+    position: absolute;
+    top: 2200px; /* 위치 조정 */
+    left: 55px; /* 위치 조정 */
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    font: bold;
+  }
+  
+  .jonna {
+    position: absolute;
+    top: 2250px; /* 위치 조정 */
+    left: 55px; /* 위치 조정 */
+    color: black;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .watch1 {
+    width: 180px;
+    height: 50px;
+    background-color: rgb(218, 85, 85);
+    border: none;
+    position: absolute;
+    top: 2350px; /* 위치 조정 */
+    left: 55px; /* 위치 조정 */
+    color: white;
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .watch1:hover {
+      background-color: black;
+      color: white;
+  }
+  
+  .class {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/b9f3efa9355803cc44e4c59d3f4437cab192bec3-5120x1616.png?accountingTag=valorant_website?auto=format&amp;fit=fill&amp;q=80&amp;h=1457);
+  }
+  
+  .class img {
+      position: absolute;
+      width: 503px;
+      height: 503px;
+      top: 2550px; /* 위치 조정 */
+      left: 150px; /* 위치 조정 */
+  }
+  
+  .Valolant {
+    position: absolute;
+    top: 2650px; /* 위치 조정 */
+    left: 680px; /* 위치 조정 */
+    color: white;
+    font-size: 80px;
+    margin: 0;
+  }
+  
+  .happy {
+    position: absolute;
+    top: 2850px; /* 위치 조정 */
+    left: 680px; /* 위치 조정 */
+    color: white;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  
+  .sad {
+    position: absolute;
+    top: 2950px; /* 위치 조정 */
+    left: 680px; /* 위치 조정 */
+    color: white;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .watch2 {
+    width: 180px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    position: absolute;
+    top: 3050px; /* 위치 조정 */
+    left: 680px; /* 위치 조정 */
+    color: white;
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .watch2:hover {
+      background-color: lightgray;
+      color: black;
+  }
+  
+  .class1 {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      background-image: url(https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/3828b05489971b4715f673bc0e2db81f6c7afac7-5120x1616.png?accountingTag=valorant_website?auto=format&amp;fit=fill&amp;q=80&amp;h=1457);
+  }
+  
+  .class1 img {
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      top: 3150px; /* 위치 조정 */
+      left: 600px; /* 위치 조정 */
+  }
+  
+  .Valolant1 {
+    position: absolute;
+    top: 3250px; /* 위치 조정 */
+    left: 80px; /* 위치 조정 */
+    color: black;
+    font-size: 80px;
+    margin: 0;
+  }
+  
+  .happy1 {
+    position: absolute;
+    top: 3400px; /* 위치 조정 */
+    left: 80px; /* 위치 조정 */
+    color: black;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  
+  .sad1 {
+    position: absolute;
+    top: 3600px; /* 위치 조정 */
+    left: 80px; /* 위치 조정 */
+    color: black;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .watch3 {
+    width: 180px;
+    height: 50px;
+    background-color: rgb(218, 85, 85);
+    border: none;
+    position: absolute;
+    top: 3650px; /* 위치 조정 */
+    left: 80px; /* 위치 조정 */
+    color: white;
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .watch3:hover {
+      background-color: black;
+      color: white;
+  }
+  
+  nav {
+      height: 100px;
+      background-color: gray;
+      color: white;
+      text-align: center;
+      line-height: 100px;
+      
+  }
+  
+  nav button {
+      padding: 10px;
+      background-color: gray;
+      outline: none;
+      border: none;
+      cursor: pointer;
+  }
+  
+  nav button:hover {
+      border-radius: 20px;
+      background-color: lightgray;
+  }
+  
+  footer {
+      height: 800px;
+      background-color: black;
+  }
+
+.end {
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    top: 4000px; /* 위치 조정 */
+    left: 900px; /* 위치 조정 */
 }
 
-nav {
-    height: 100px;
-    background-color: gray;
+.p1{
+    position: absolute;
     color: white;
     text-align: center;
-    line-height: 100px;
-    
+    top: 4100px;
+    left: 600px;
 }
 
-nav button {
-    padding: 10px;
-    background-color: gray;
-    outline: none;
-    border: none;
-    cursor: pointer;
+.p2{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 4130px;
+    left: 750px;
 }
 
-nav button:hover {
-    border-radius: 20px;
-    background-color: lightgray;
+.p3{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 4200px;
+    left: 650px;
+
 }
 
-footer {
-    height: 600px;
-    background-color: black;
+.p4{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 4230px;
+    left: 750px;
+
+}
+
+.p5{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 4260px;
+    left: 700px;
 }
